@@ -235,6 +235,7 @@ th {
     cursor: pointer;
 }
 
+/* Texto rojo para gastos*/
 .rojo {
     color: red;
 }

@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class CabeceraComponent {
   menuAbierto = false;
-  miniMenu = true; // Modo mini por defecto
+  miniMenu = true;
 
   toggleMenu() {
     this.menuAbierto = !this.menuAbierto;
-    this.miniMenu = !this.menuAbierto; // Desactiva mini cuando se expande el menú
+    this.miniMenu = !this.menuAbierto;
   }
 }
