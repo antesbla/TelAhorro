@@ -1,6 +1,4 @@
-/* =============================
-   ESTILOS GENERALES DE LA CABECERA
-   ============================= */
+
    header {
     background-image: linear-gradient(to right, #4D8C73, #EEE071);
     width: 100%;
@@ -17,7 +15,7 @@
     z-index: 1000;
     margin-left: 60px;
 }
-
+/* Logo */
 img {
     height: 80%;
     max-height: 50px;
@@ -28,6 +26,7 @@ img {
     object-fit: contain;
 }
 
+/* Iconos */
 i {
     color: black;
     padding-left: 10px;
@@ -35,9 +34,7 @@ i {
     padding-bottom: 15px;
 }
 
-/* =============================
-   MENÚ LATERAL (OCULTO POR DEFECTO)
-   ============================= */
+/* Menú lateral desplegado*/
 nav {
     position: fixed;
     top: 0;
@@ -49,16 +46,10 @@ nav {
     padding-top: 60px;
 }
 
-/* =============================
-   CLASE QUE ABRE EL MENÚ
-   ============================= */
 nav.open {
     left: 0;
 }
 
-/* =============================
-   LISTA DE ENLACES EN EL MENÚ
-   ============================= */
 ul {
     list-style: none;
     padding: 0;
@@ -71,9 +62,6 @@ li {
     align-items: left;
 }
 
-/* =============================
-   ESTILOS DE LOS ENLACES
-   ============================= */
 a {
     text-decoration: none;
     color: white;
@@ -83,9 +71,7 @@ a {
     gap: 10px;
 }
 
-/* =============================
-   MINI MENÚ CUANDO ESTÁ COLAPSADO
-   ============================= */
+/* Menú lateral sin desplegar*/
 nav.mini {
     width: 60px;
     left: 0;
@@ -104,7 +90,6 @@ nav.mini a img {
     width: 30px;
 }
 
-/* Mostrar el texto cuando el usuario pase el mouse */
 nav.mini:hover {
     width: 250px;
 }
