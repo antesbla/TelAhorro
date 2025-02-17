@@ -1,1 +1,66 @@
-<p>ahorros works!</p>
+<body>
+    <div class="titulo">
+      <p>Metas de Ahorro</p>
+    </div>
+  
+    <!-- Mostrar metas de ahorro -->
+    <div class="nuevo-div"> <!--*ngFor="let meta of metas; let i = index" class="formulario"-->
+      <div class="meta">
+        <h3><!--{{ meta.nombre }}-->aaaa</h3>
+        <p>Monto Total:<!-- {{ meta.montoTotal }}--> €</p>
+        <p>Fecha Límite: <!--{{ meta.fechaLimite | date }}--></p>
+  
+        <!-- Mostrar cantidad ahorrada -->
+        <p>Cantidad Ahorrada: <!--{{ meta.montoAhorrado }}--> €</p>
+        <p>Progreso de Ahorro:<!-- {{ meta.progresoAhorro | number: '1.0-0' }}-->%</p>
+        
+        <div class="barra-progreso">
+          <progress [value]="50" max="100"></progress>
+        </div>
+    </div>
+        <button class="delete-btn"> Eliminar Meta</button><!--(click)="eliminarMeta(i-)"-->
+    </div>
+  
+    <!-- Formulario para crear nueva meta de ahorro -->
+    <div class="titulos">
+      <div class="titulo">
+        <p>Crear Nueva Meta de Ahorro</p>
+      </div>
+      
+  
+      <!-- Formulario para añadir dinero a la meta de ahorro -->
+      <div class="titulo">
+        <p>Añadir Dinero a Meta de Ahorro</p>
+      </div>
+    </div>
+
+    <div class="formulario">
+    <div class="formulario1">
+        <label class="labelFormularioNuevaMeta">Nombre:</label>
+        <input type="text" class="cuadroFormularioNuevaMeta" [(ngModel)]="nombreMeta">
+  
+        <label class="labelFormularioNuevaMeta">Monto Total:</label>
+        <input type="number" class="cuadroFormularioNuevaMeta" [(ngModel)]="montoTotalMeta">
+  
+        <label class="labelFormularioNuevaMeta">Fecha Límite:</label>
+        <input type="date" class="cuadroFormularioNuevaMeta" [(ngModel)]="fechaLimiteMeta">
+  
+        <button class="botonGuardarMeta" (click)="agregarMeta()">Agregar Meta</button>
+        <button class="botonCancelar" (click)="limpiarFormulario()">Cancelar</button>
+      </div>
+
+      <div class="formulario1">
+        <label class="labelFormularioNuevaMeta">Seleccionar Meta:</label>
+        <select class="cuadroFormularioNuevaMeta" [(ngModel)]="metaSeleccionada">
+          <option value="-1" disabled selected>Seleccione una meta</option>
+          <option *ngFor="let meta of metas; let i = index" [value]="i">{{ meta.nombre }}</option>
+        </select>
+  
+        <label class="labelFormularioNuevaMeta">Monto a añadir:</label>
+        <input type="number" class="cuadroFormularioNuevaMeta" [(ngModel)]="montoAhorro">
+  
+        <button class="botonGuardarMeta" (click)="agregarAhorro()">Añadir Ahorro</button>
+      </div>
+    </div>
+  </body>
+  
