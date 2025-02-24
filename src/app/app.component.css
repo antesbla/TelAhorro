@@ -4,9 +4,6 @@
     box-sizing: border-box;
   }
 
-  main {
-    flex: 1;
-  }
 
 /*table, th, td {
     all: unset; 

@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Component, ViewChild, ElementRef } from '@angular/core';
-
-
+import { CabeceraComponent } from '../../core/cabecera/cabecera.component';
 
 @Component({
   selector: 'app-transacciones',

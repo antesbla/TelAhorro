@@ -1,18 +1,17 @@
 
-<header>
+<header [ngStyle]="{'background-color': getColorFondo()}">
   <img src="https://beeimg.com/images/i73928048674.png" alt="Logo de mi aplicación">
     <nav [class.open]="menuAbierto" [class.mini]="miniMenu">
       <ul>
         <li>
           <i class="fa-solid fa-credit-card"></i>
-          <a routerLink="/Transacciones">
-            <span>Transacciones</span>
+          <a routerLink="/transacciones">Transacciones
           </a>
         </li>
         <li>
           <i class="fa-solid fa-percent"></i> 
           <a routerLink="/ahorros"> 
-            <span>Ahorros</span>
+            Ahorros
           </a>
         </li>
         <li>

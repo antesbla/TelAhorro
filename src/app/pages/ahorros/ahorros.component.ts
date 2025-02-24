@@ -4,9 +4,9 @@ import { CommonModule } from '@angular/common';  // Importar CommonModule
 
 interface MetaAhorro {
   nombre: string;
-  montoTotal: number;
+  CantidadTotal: number;
   fechaLimite: Date;
-  montoAhorrado: number;
+  CantidadAhorrada: number;
   progresoAhorro: number;
 }
 
@@ -20,21 +20,21 @@ interface MetaAhorro {
 export class AhorrosComponent {
   // Variables del componente
   nombreMeta: string = '';
-  montoTotalMeta: number = 0;
+  CantidadTotalMeta: number = 0;
   fechaLimiteMeta: string = '';
-  montoAhorro: number = 0;
+  CantidadAhorro: number = 0;
   metas: MetaAhorro[] = [];
   metaSeleccionada: number = -1;  // Índice de la meta seleccionada
 
   // Función para agregar una nueva meta de ahorro
   agregarMeta() {
-    if (this.nombreMeta.trim() && this.fechaLimiteMeta && this.montoTotalMeta > 0) {
+    if (this.nombreMeta.trim() && this.fechaLimiteMeta && this.CantidadTotalMeta > 0) {
       const fecha = new Date(this.fechaLimiteMeta);
       const nuevaMeta: MetaAhorro = {
         nombre: this.nombreMeta,
-        montoTotal: this.montoTotalMeta,
+        CantidadTotal: this.CantidadTotalMeta,
         fechaLimite: fecha,
-        montoAhorrado: 0,
+        CantidadAhorrada: 0,
         progresoAhorro: 0
       };
 
@@ -45,13 +45,13 @@ export class AhorrosComponent {
 
   // Función para agregar ahorro a una meta existente
   agregarAhorro() {
-    if (this.montoAhorro > 0 && this.metaSeleccionada >= 0) {
+    if (this.CantidadAhorro > 0 && this.metaSeleccionada >= 0) {
       const meta = this.metas[this.metaSeleccionada]; // Tomamos la meta seleccionada
-      meta.montoAhorrado += this.montoAhorro;
-      meta.progresoAhorro = (meta.montoAhorrado / meta.montoTotal) * 100;
+      meta.CantidadAhorrada += this.CantidadAhorro;
+      meta.progresoAhorro = (meta.CantidadAhorrada / meta.CantidadTotal) * 100;
 
       // Limpiamos el campo de montoAhorro
-      this.montoAhorro = 0;
+      this.CantidadAhorro = 0;
       this.metaSeleccionada = -1; // Resetear selección
     }
   }
@@ -65,6 +65,6 @@ export class AhorrosComponent {
   limpiarFormulario() {
     this.nombreMeta = '';
     this.fechaLimiteMeta = '';
-    this.montoTotalMeta = 0;
+    this.CantidadTotalMeta = 0;
   }
 }

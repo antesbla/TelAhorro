@@ -146,4 +146,11 @@ html, body {
   .delete-btn:hover {
     background-color: #e04343;
   }
+
+  .metas {
+    display: grid;
+    align-content: stretch;
+    align-items: baseline;
+    grid-template-columns: repeat(2, 1fr);
+  }
   
