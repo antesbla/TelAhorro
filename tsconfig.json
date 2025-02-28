@@ -1,33 +1,118 @@
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
-{
+/**
+ * @description Configuración para la compilación de TypeScript y opciones específicas del compilador de Angular.
+ */
+ {
   "compileOnSave": false,
   "compilerOptions": {
+    /**
+     * @description Directorio de salida para los archivos compilados.
+     */
     "outDir": "./dist/out-tsc",
+    
+    /**
+     * @description Activa todas las verificaciones de estrictas.
+     */
     "strict": true,
+    
+    /**
+     * @description No permite la sobrescritura implícita de métodos.
+     */
     "noImplicitOverride": true,
+    
+    /**
+     * @description Prohíbe el acceso a propiedades no definidas en los índices de tipo.
+     */
     "noPropertyAccessFromIndexSignature": true,
+    
+    /**
+     * @description Obligatorio que las funciones tengan una declaración de retorno implícita.
+     */
     "noImplicitReturns": true,
+    
+    /**
+     * @description Prohíbe casos de declaración sin manejar en switch.
+     */
     "noFallthroughCasesInSwitch": true,
+    
+    /**
+     * @description Omitir la verificación de tipos en los archivos de declaración de bibliotecas.
+     */
     "skipLibCheck": true,
+    
+    /**
+     * @description Aísla módulos para evitar conflictos.
+     */
     "isolatedModules": true,
+    
+    /**
+     * @description Permite la interoperabilidad de módulos ES con CommonJS.
+     */
     "esModuleInterop": true,
+    
+    /**
+     * @description Habilita la generación de mapas de origen.
+     */
     "sourceMap": true,
+    
+    /**
+     * @description Desactiva la generación de archivos de declaración.
+     */
     "declaration": false,
+    
+    /**
+     * @description Habilita decoradores experimentales.
+     */
     "experimentalDecorators": true,
+    
+    /**
+     * @description Método de resolución de módulos.
+     */
     "moduleResolution": "bundler",
+    
+    /**
+     * @description Importa helpers de TS en lugar de incluirlos en cada archivo.
+     */
     "importHelpers": true,
+    
+    /**
+     * @description Versión de ECMAScript destino.
+     */
     "target": "ES2022",
+    
+    /**
+     * @description Sistema de módulos ECMAScript.
+     */
     "module": "ES2022",
+    
+    /**
+     * @description Bibliotecas adicionales para incluir durante la compilación.
+     */
     "lib": [
       "ES2022",
       "dom"
     ]
   },
   "angularCompilerOptions": {
+    /**
+     * @description Desactiva el formato de mensajes de i18n heredado.
+     */
     "enableI18nLegacyMessageIdFormat": false,
+    
+    /**
+     * @description Activa estrictos parámetros de inyección en los componentes.
+     */
     "strictInjectionParameters": true,
+    
+    /**
+     * @description Activa verificaciones estrictas en los accesos a las propiedades de las plantillas.
+     */
     "strictInputAccessModifiers": true,
+    
+    /**
+     * @description Habilita reglas estrictas para plantillas.
+     */
     "strictTemplates": true
   }
 }

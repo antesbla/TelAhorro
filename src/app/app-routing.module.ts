@@ -7,6 +7,9 @@ import { TransaccionesComponent } from './transacciones/transacciones.component'
 import { AhorrosComponent } from './ahorros/ahorros.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
+/**
+ * @description Configuración de rutas para la aplicación.
+ */
 const routes: Routes = [
   { path: 'registro', component: RegistroComponent },
   { path: 'login', component: LoginComponent },

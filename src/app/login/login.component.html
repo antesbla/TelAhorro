@@ -1,28 +1,33 @@
 <body>
+  <!-- Formulario de inicio de sesión -->
   <form (ngSubmit)="onSubmit()">
     <div class="formularioLogin">
-    <img src="https://beeimg.com/images/i73928048674.png" alt="Logo de mi aplicación">
-    
-        <div class="formulario">
-          <label class="labelFormularioLogin"> Nombre de usuario:</label>
-          <input class="cuadroFormularioLogin" type="text" [(ngModel)]="nombreUsuario" name="nombreUsuario" placeholder="Nombre de Usuario" required/>
+      <!-- Logo de la aplicación -->
+      <img src="https://beeimg.com/images/i73928048674.png" alt="Logo de mi aplicación">
 
-          <label class="labelFormularioLogin"> Contraseña:</label>
-          <input class="cuadroFormularioLogin" type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required/>
-          
-        </div>
-        <p *ngIf="mensaje" [ngClass]="mensajeClase">{{ mensaje }}</p>
+      <!-- Campos del formulario de inicio de sesión -->
+      <div class="formulario">
+        <label class="labelFormularioLogin"> Nombre de usuario:</label>
+        <input class="cuadroFormularioLogin" type="text" [(ngModel)]="nombreUsuario" name="nombreUsuario" placeholder="Nombre de Usuario" required/>
+
+        <label class="labelFormularioLogin"> Contraseña:</label>
+        <input class="cuadroFormularioLogin" type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required/>
+      </div>
+
+      <!-- Mensaje de error o éxito -->
+      <p *ngIf="mensaje" [ngClass]="mensajeClase">{{ mensaje }}</p>
     </div>
 
+    <!-- Botón para iniciar sesión -->
     <div class="divboton">
-    <button type="submit">Iniciar Sesión</button>
+      <button type="submit">Iniciar Sesión</button>
     </div>
-
   </form>
 </body>
 
+<!-- Pie de página -->
 <footer>
   <div>
-      <p>Antonio Estrada Blanco © TelAhorro 2025</p>
+    <p>Antonio Estrada Blanco © TelAhorro 2025</p>
   </div>
 </footer>

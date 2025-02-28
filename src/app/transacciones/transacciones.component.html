@@ -1,7 +1,9 @@
 <body>
+    <!-- Saludo personalizado con el nombre y apellidos del usuario -->
     <h2>Buenos días {{ nombre }} {{ apellidos }}:</h2>
     <p>Última Conexión {{ ultimaConexion }}</p>
     
+    <!-- Contenedor para mostrar el saldo total disponible -->
     <div class="contenedor">
         <div class="fondoBlanco">
             <p class="verde">Dinero disponible:</p>
@@ -12,12 +14,14 @@
         </div>
     </div>
     
+    <!-- Sección para mostrar las últimas transacciones -->
     <h2>Últimas Transacciones:</h2>
     <div class="contenedor">
         <button class="Ingreso" (click)="mostrarFormularioIngreso()">Agregar Ingreso</button>
         <button class="Gasto" (click)="mostrarFormularioGasto()">Agregar Gasto</button>
     </div>
     
+    <!-- Formulario para agregar un nuevo ingreso -->
     <div *ngIf="formularioIngresoVisible" class="formularioIngreso">
         <p class="tituloFormularioIngreso">Agregar Ingreso:</p>
         <label class="labelFormularioIngreso">Fecha:</label>
@@ -44,6 +48,7 @@
         </div>
     </div>
 
+    <!-- Formulario para agregar un nuevo gasto -->
     <div *ngIf="formularioGastoVisible" class="formularioGasto">
         <p class="tituloFormularioGasto">Agregar Gasto:</p>
         <label class="labelFormularioGasto">Fecha:</label>
@@ -71,6 +76,7 @@
         </div>
     </div>
     
+    <!-- Tabla para mostrar las transacciones de ingresos y gastos -->
     <table>
         <thead>
             <tr>

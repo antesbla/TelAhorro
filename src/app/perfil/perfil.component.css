@@ -1,4 +1,8 @@
-html, body {
+/* Estilo general para el cuerpo del documento */
+/**
+ * @description Estilo general para el cuerpo del documento.
+ */
+ html, body {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -7,6 +11,10 @@ html, body {
     background-color: #F2F2F2;
 }
 
+/* Estilo para los títulos */
+/**
+ * @description Estilo para los títulos de la página.
+ */
 .titulo {
     margin: 10px;
     background-color: white;
@@ -18,6 +26,10 @@ html, body {
     color: #4A8970;
 }
 
+/* Estilo para los datos */
+/**
+ * @description Estilo para la sección de datos de la página.
+ */
 .datos {
     padding: 10px;
     display: flex;
@@ -26,6 +38,10 @@ html, body {
     font-size: 20px;
 }
 
+/* Estilo para el contenedor del botón de cerrar sesión */
+/**
+ * @description Estilo para el contenedor del botón de cerrar sesión.
+ */
 .cerrarSesion-container {
     margin-top: auto;
     display: flex;
@@ -33,6 +49,10 @@ html, body {
     padding-bottom: 20px; /* Espacio opcional debajo del botón */
 }
 
+/* Estilo para la clase cerrarSesion */
+/**
+ * @description Estilo para la clase cerrarSesion.
+ */
 .cerrarSesion {
     color: white;
     border-radius: 13px;
@@ -41,6 +61,10 @@ html, body {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de cerrar sesión */
+/**
+ * @description Estilo para el botón de cerrar sesión.
+ */
 .cerrarSesion button {
     padding: 10px;
     font-size: 15px;
@@ -49,6 +73,10 @@ html, body {
     color: red;
 }
 
+/* Estilo para el botón de cerrar sesión en hover */
+/**
+ * @description Estilo para el botón de cerrar sesión cuando se coloca el ratón sobre él.
+ */
 .cerrarSesion button:hover {
     padding: 10px;
     font-size: 15px;

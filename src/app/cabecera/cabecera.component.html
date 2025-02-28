@@ -1,27 +1,33 @@
-
 <header>
-    <img src="https://beeimg.com/images/i73928048674.png" alt="Logo de mi aplicación">
-      <nav [class.open]="menuAbierto" [class.mini]="miniMenu">
-        <ul>
+  <!-- Logo de la aplicación -->
+  <img src="https://beeimg.com/images/i73928048674.png" alt="Logo de mi aplicación">
+  
+  <!-- Menú de navegación -->
+  <nav [class.open]="menuAbierto" [class.mini]="miniMenu">
+      <ul>
           <li>
-            <i class="fa-solid fa-credit-card" style="color: #ffffff;"></i>
-            <a routerLink="/transacciones">Transacciones
-            </a>
+              <!-- Icono de transacciones -->
+              <i class="fa-solid fa-credit-card" style="color: #ffffff;"></i>
+              <!-- Enlace a la página de transacciones -->
+              <a routerLink="/transacciones">Transacciones</a>
           </li>
           <li>
-            <i class="fa-solid fa-percent" style="color: #ffffff;"></i> 
-            <a routerLink="/ahorros">Ahorros
-            </a>
+              <!-- Icono de ahorros -->
+              <i class="fa-solid fa-percent" style="color: #ffffff;"></i>
+              <!-- Enlace a la página de ahorros -->
+              <a routerLink="/ahorros">Ahorros</a>
           </li>
           <li>
-            <i class="fa-regular fa-circle-user" style="color: #ffffff;"></i>
-            <a routerLink="/perfil">Perfil
-            </a>
+              <!-- Icono de perfil -->
+              <i class="fa-regular fa-circle-user" style="color: #ffffff;"></i>
+              <!-- Enlace a la página de perfil -->
+              <a routerLink="/perfil">Perfil</a>
           </li>
-        </ul>
-      </nav>
-    </header>
-    
-    <footer>
-      <p>Antonio Estrada Blanco © TelAhorro 2025</p>  
-    </footer>
+      </ul>
+  </nav>
+</header>
+
+<footer>
+  <!-- Información del pie de página -->
+  <p>Antonio Estrada Blanco © TelAhorro 2025</p>  
+</footer>

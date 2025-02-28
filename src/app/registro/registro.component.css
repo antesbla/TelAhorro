@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* Estilo general para el cuerpo del documento */
+/**
+ * @description Estilo general para el cuerpo del documento.
+ */
 body {
     background: linear-gradient(60deg, #4D8C73, #EEE071);
     background-repeat: no-repeat;
@@ -12,12 +16,20 @@ body {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el logo */
+/**
+ * @description Estilo para el logo de la aplicación.
+ */
 img {
     width: 55%;
     align-content: center;
     padding: 30px;
 }
 
+/* Estilo para el contenedor del formulario de registro */
+/**
+ * @description Estilo para el contenedor del formulario de registro.
+ */
 .formularioRegistro {
     background-color: white;
     align-items: center;
@@ -27,22 +39,38 @@ img {
     flex-direction: column;
 }
 
+/* Estilo para los campos del formulario */
+/**
+ * @description Estilo para los campos del formulario de registro.
+ */
 .formulario {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
 }
 
+/* Estilo para la primera columna del formulario */
+/**
+ * @description Estilo para la primera columna del formulario.
+ */
 .columna1 {
     display: grid;
     margin: 10px;
 }
 
+/* Estilo para la segunda columna del formulario */
+/**
+ * @description Estilo para la segunda columna del formulario.
+ */
 .columna2 {
     display: grid;
     margin: 10px;
 }
 
+/* Estilo para las etiquetas y los campos de entrada */
+/**
+ * @description Estilo para las etiquetas y los campos de entrada.
+ */
 label, input {
     margin: 5px;
     margin-right: 30px;
@@ -50,11 +78,19 @@ label, input {
     font-family: 'Quicksand';
 }
 
+/* Estilo para los campos de entrada */
+/**
+ * @description Estilo para los campos de entrada en el formulario.
+ */
 input {
     border: 1px solid #4D8C73;
     padding: 3px;
 }
 
+/* Estilo para el contenedor del botón */
+/**
+ * @description Estilo para el contenedor del botón de registro.
+ */
 .divboton {
     display: flex;
     flex-direction: column;
@@ -62,6 +98,10 @@ input {
     margin: 20px;
 }
 
+/* Estilo para el botón de registro */
+/**
+ * @description Estilo para el botón de registro.
+ */
 button {
     padding: 10px;
     font-size: 15px;
@@ -74,7 +114,11 @@ button {
     font-family: 'Quicksand';
 }
 
-button:hover{
+/* Estilo para el botón de registro en hover */
+/**
+ * @description Estilo para el botón de registro cuando se coloca el ratón sobre él.
+ */
+button:hover {
     padding: 10px;
     font-size: 15px;
     padding-left: 25px;
@@ -85,6 +129,10 @@ button:hover{
     background-color: rgba(255, 255, 255, 0.329);
 }
 
+/* Estilo para el pie de página */
+/**
+ * @description Estilo general para el pie de página.
+ */
 footer {
     height: 60px;
     box-sizing: border-box;

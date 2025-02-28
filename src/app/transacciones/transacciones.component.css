@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-/* Cuerpo */
+
+/* Estilo general para el cuerpo del documento */
+/**
+ * @description Estilo general para el cuerpo del documento.
+ */
 html, body {
     display: flex;
     flex-direction: column;
@@ -10,12 +14,19 @@ html, body {
     font-family: 'Quicksand';
 }
 
-/*Contenido*/
+/* Estilo para el contenedor principal */
+/**
+ * @description Estilo para el contenedor principal de la página.
+ */
 .contenedor {
     display: flex;
     align-items: center;
 }
 
+/* Estilo para el fondo blanco */
+/**
+ * @description Estilo para el fondo blanco del contenedor.
+ */
 .fondoBlanco {
     width: 100%;
     background-color: white;
@@ -24,6 +35,11 @@ html, body {
     padding: 10px;
     font-size: 25px;
 }
+
+/* Estilo para el cuadro verde */
+/**
+ * @description Estilo para el cuadro verde que muestra el saldo disponible.
+ */
 .cuadroVerde {
     background-color: #4A8970;
     color: white;
@@ -32,11 +48,18 @@ html, body {
     font-size: 25px;
 }
 
+/* Estilo para el texto verde */
+/**
+ * @description Estilo para el texto en color verde.
+ */
 .verde {
     color: #4A8970;
 }
 
-/* Botones */
+/* Estilo para los botones de ingreso */
+/**
+ * @description Estilo para los botones de ingreso.
+ */
 .Ingreso {
     padding: 12px;
     background-color: #4A8970;
@@ -49,6 +72,10 @@ html, body {
     font-family: 'Quicksand';
 }
 
+/* Estilo para los botones de ingreso en hover */
+/**
+ * @description Estilo para los botones de ingreso cuando se coloca el ratón sobre ellos.
+ */
 .Ingreso:hover {
     padding: 12px;
     background-color: #335e4c;
@@ -60,6 +87,10 @@ html, body {
     cursor: pointer;    
 }
 
+/* Estilo para los botones de gasto */
+/**
+ * @description Estilo para los botones de gasto.
+ */
 .Gasto {
     padding: 12px;
     background-color: #EEE071;
@@ -71,6 +102,10 @@ html, body {
     font-family: 'Quicksand';
 }
 
+/* Estilo para los botones de gasto en hover */
+/**
+ * @description Estilo para los botones de gasto cuando se coloca el ratón sobre ellos.
+ */
 .Gasto:hover {
     padding: 12px;
     background-color: #ccbb3d;
@@ -81,8 +116,10 @@ html, body {
     cursor: pointer;
 }
 
-/* Tabla */
-
+/* Estilo para la tabla de transacciones */
+/**
+ * @description Estilo para la tabla de transacciones.
+ */
 table {
     width: 100%; /* Ocupa todo el ancho disponible */
     border-collapse: separate; 
@@ -90,8 +127,12 @@ table {
     margin: 20px 0;
     font-size: 18px;
     text-align: center;
-  }
+}
 
+/* Estilo para las celdas de encabezado de la tabla */
+/**
+ * @description Estilo para las celdas de encabezado de la tabla.
+ */
 th {
     border: 2px;
     background-color: #4A8970;
@@ -99,15 +140,16 @@ th {
     color: white;
 }
 
-/* Formularios */
-/* Formulario Ingreso */
+/* Estilo para el formulario de ingreso */
+/**
+ * @description Estilo para el formulario de ingreso.
+ */
 .tituloFormularioIngreso {
     padding-bottom: 10px;
     font-size: 18px;
     color: #335e4c;
     text-decoration: underline #4D8C73;
 }
-
 
 .formularioIngreso {
     padding: 10px;
@@ -117,6 +159,10 @@ th {
     width: fit-content;
 }
 
+/* Estilo para las etiquetas del formulario de ingreso */
+/**
+ * @description Estilo para las etiquetas del formulario de ingreso.
+ */
 .labelFormularioIngreso {
     width: min-content;
     height: min-content;
@@ -126,6 +172,10 @@ th {
     margin-bottom: 15px;
 }
 
+/* Estilo para los campos del formulario de ingreso */
+/**
+ * @description Estilo para los campos del formulario de ingreso.
+ */
 .cuadroFormularioIngreso {
     border-radius: 20px;
     text-align: left;
@@ -141,6 +191,10 @@ th {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de guardar ingreso */
+/**
+ * @description Estilo para el botón de guardar ingreso.
+ */
 .botonGuardarIngreso {
     border-radius: 9px;
     padding: 5px;
@@ -151,6 +205,10 @@ th {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de guardar ingreso en hover */
+/**
+ * @description Estilo para el botón de guardar ingreso cuando se coloca el ratón sobre él.
+ */
 .botonGuardarIngreso:hover {
     border-radius: 9px;
     padding: 5px;
@@ -161,7 +219,10 @@ th {
     cursor: pointer;
 }
 
-/* Botón Cerrar */
+/* Estilo para el botón de cerrar formulario */
+/**
+ * @description Estilo para el botón de cerrar formulario.
+ */
 .botonCerrar {
     border-radius: 9px;
     padding: 5px;
@@ -172,6 +233,10 @@ th {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de cerrar formulario en hover */
+/**
+ * @description Estilo para el botón de cerrar formulario cuando se coloca el ratón sobre él.
+ */
 .botonCerrar:hover {
     border-radius: 9px;
     padding: 5px;
@@ -182,14 +247,16 @@ th {
     cursor: pointer;
 }
 
-/* Formulario Gasto */
+/* Estilo para el formulario de gasto */
+/**
+ * @description Estilo para el formulario de gasto.
+ */
 .tituloFormularioGasto {
     padding-bottom: 10px;
     font-size: 18px;
     color: #ccbb3d;
     text-decoration: underline #ccbb3d;
 }
-
 
 .formularioGasto {
     padding: 10px;
@@ -199,6 +266,10 @@ th {
     width: fit-content;
 }
 
+/* Estilo para las etiquetas del formulario de gasto */
+/**
+ * @description Estilo para las etiquetas del formulario de gasto.
+ */
 .labelFormularioGasto {
     width: min-content;
     height: min-content;
@@ -208,6 +279,10 @@ th {
     margin-bottom: 15px;
 }
 
+/* Estilo para los campos del formulario de gasto */
+/**
+ * @description Estilo para los campos del formulario de gasto.
+ */
 .cuadroFormularioGasto {
     border-radius: 20px;
     text-align: left;
@@ -223,6 +298,10 @@ th {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de guardar gasto */
+/**
+ * @description Estilo para el botón de guardar gasto.
+ */
 .botonGuardarGasto {
     border-radius: 9px;
     padding: 5px;
@@ -233,6 +312,10 @@ th {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de guardar gasto en hover */
+/**
+ * @description Estilo para el botón de guardar gasto cuando se coloca el ratón sobre él.
+ */
 .botonGuardarGasto:hover {
     border-radius: 9px;
     padding: 5px;
@@ -243,7 +326,10 @@ th {
     cursor: pointer;
 }
 
-/* Texto rojo para gastos*/
+/* Estilo para el texto en color rojo */
+/**
+ * @description Estilo para el texto en color rojo.
+ */
 .rojo {
     color: red;
 }

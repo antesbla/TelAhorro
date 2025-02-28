@@ -1,157 +1,227 @@
 /* Cuerpo */
-html, body {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    margin-left: 25px;
-    background-color: #F2F2F2;
-    padding: 10px;
-    font-family: 'Quicksand';
+/**
+ * @description Estilo general para el cuerpo del documento.
+ */
+ html, body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #F2F2F2;
+  padding: 10px;
+  font-family: 'Quicksand';
 }
 
+/* Título */
+/**
+* @description Estilo para el título principal.
+*/
 .titulo {
-    margin: 10px;
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 25px;
-    color: #4A8970;
-    flex: 0.5;
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: #4A8970;
+  flex: 0.5;
 }
 
+/* Títulos */
+/**
+* @description Contenedor para los títulos.
+*/
 .titulos {
-    display: flex;
+  display: flex;
 }
 
+/* Formulario */
+/**
+* @description Estilo para el contenedor del formulario.
+*/
 .formulario {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
+/* Formulario1 */
+/**
+* @description Estilo para el primer formulario.
+*/
 .formulario1 {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    background-color: #D1DED9;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #D1DED9;
+  padding: 15px;
 }
 
+/* LabelFormularioNuevaMeta */
+/**
+* @description Estilo para la etiqueta del formulario de nueva meta.
+*/
 .labelFormularioNuevaMeta {
-    padding-top: 5px;
-    margin-bottom: 10px;
+  padding-top: 5px;
+  margin-bottom: 10px;
 }
 
+/* CuadroFormularioNuevaMeta */
+/**
+* @description Estilo para el cuadro de entrada del formulario de nueva meta.
+*/
 .cuadroFormularioNuevaMeta {
-    border-radius: 20px;
-    text-align: left;
-    padding: 5px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    border-color: #4A8970;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    background-color: rgb(241, 241, 241);
-    font-family: 'Quicksand';
+  border-radius: 20px;
+  text-align: left;
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-color: #4A8970;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: rgb(241, 241, 241);
+  font-family: 'Quicksand';
 }
 
+/* BotónGuardarMeta */
+/**
+* @description Estilo para el botón de guardar meta.
+*/
 .botonGuardarMeta {
-    border-radius: 9px;
-    padding: 5px;
-    border: 0px;
-    background-color: #4A8970;
-    color: white;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 5px;
+  border-radius: 9px;
+  padding: 5px;
+  border: 0px;
+  background-color: #4A8970;
+  color: white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
+/* BotónGuardarMeta:hover */
+/**
+* @description Estilo para el botón de guardar meta en hover.
+*/
 .botonGuardarMeta:hover {
-    border-radius: 9px;
-    padding: 5px;
-    border: 0px;
-    background-color: #335e4c;
-    color: white;
-    margin-right: 10px;
-    cursor: pointer;
+  border-radius: 9px;
+  padding: 5px;
+  border: 0px;
+  background-color: #335e4c;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
+/* BotónCancelar */
+/**
+* @description Estilo para el botón de cancelar.
+*/
 .botonCancelar {
-    border-radius: 9px;
-    padding: 5px;
-    border: 0px;
-    background-color: #919191;
-    color: white;
-    margin-right: 10px;
+  border-radius: 9px;
+  padding: 5px;
+  border: 0px;
+  background-color: #919191;
+  color: white;
+  margin-right: 10px;
 }
 
+/* BotónCancelar:hover */
+/**
+* @description Estilo para el botón de cancelar en hover.
+*/
 .botonCancelar:hover {
-    border-radius: 9px;
-    padding: 5px;
-    border: 0px;
-    background-color: #616161;
-    color: white;
-    margin-right: 10px;
-    cursor: pointer;
+  border-radius: 9px;
+  padding: 5px;
+  border: 0px;
+  background-color: #616161;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
 }
-
-
 
 /* Contenedor de los divs de las metas */
+/**
+* @description Estilo para el contenedor de los divs de las metas.
+*/
 .nuevo-div {
-    background-color: #D1DED9;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .meta h3 {
-    font-size: 20px;
-    color: black;
-    margin-bottom: 5px;
-  }
-  
-  .meta p {
-    font-size: 16px;
-    color: #3c3c3c;
-  }
-  
-  .barra-progreso progress {
-    width: 100%;
-    height: 20px;
-    margin-top: 5px;
-  }
-  
-  .barra-progreso p {
-    font-size: 14px;
-    color: 3c3c3c;
-  }
-  
-  /* Botón de eliminar */
-  .delete-btn {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .delete-btn:hover {
-    background-color: #e04343;
-  }
+  background-color: #D1DED9;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
 
-  .metas {
-    display: grid;
-    align-content: stretch;
-    align-items: baseline;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
+/* Meta */
+/**
+* @description Estilo para el título de la meta.
+*/
+.meta h3 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+/* Meta */
+/**
+* @description Estilo para el párrafo de la meta.
+*/
+.meta p {
+  font-size: 16px;
+  color: #3c3c3c;
+}
+
+/* BarraProgreso */
+/**
+* @description Estilo para la barra de progreso.
+*/
+.barra-progreso progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+}
+
+/* BarraProgreso */
+/**
+* @description Estilo para el texto dentro de la barra de progreso.
+*/
+.barra-progreso p {
+  font-size: 14px;
+  color: #3c3c3c;
+}
+
+/* BotónEliminar */
+/**
+* @description Estilo para el botón de eliminar.
+*/
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* BotónEliminar:hover */
+/**
+* @description Estilo para el botón de eliminar en hover.
+*/
+.delete-btn:hover {
+  background-color: #e04343;
+}
+
+/* Metas */
+/**
+* @description Estilo para el contenedor de las metas.
+*/
+.metas {
+  display: grid;
+  align-content: stretch;
+  align-items: baseline;
+  grid-template-columns: repeat(2, 1fr);
+}

@@ -1,27 +1,32 @@
 <body>
+    <!-- Sección para mostrar el nombre -->
     <div class="titulo">
         <p>Nombre</p>
     </div>
-        <div class="datos">
-            <p>{{ nombre }}</p>
-        </div>
+    <div class="datos">
+        <p>{{ nombre }}</p>
+    </div>
+
+    <!-- Sección para mostrar los apellidos -->
     <div class="titulo">
         <p>Apellidos</p>
     </div>
-        <div class="datos">
-            <p>{{ apellidos }}</p>
-        </div>    
+    <div class="datos">
+        <p>{{ apellidos }}</p>
+    </div>    
+
+    <!-- Sección para mostrar el nombre de usuario -->
     <div class="titulo">
         <p>Nombre de usuario</p>
     </div>
-        <div class="datos">
-            <p>{{ nombreUsuario }}</p>
+    <div class="datos">
+        <p>{{ nombreUsuario }}</p>
+    </div>
+
+    <!-- Botón para cerrar sesión -->
+    <div class="cerrarSesion-container">
+        <div class="cerrarSesion">
+            <button (click)="cerrarSesion()">Cerrar Sesión</button>
         </div>
-            
-        <div class="cerrarSesion-container">
-            <div class="cerrarSesion">
-                <button (click)="cerrarSesion()">Cerrar Sesión</button>
-            </div>
-        </div>
-        
+    </div>
 </body>

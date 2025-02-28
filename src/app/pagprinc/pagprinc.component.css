@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* Estilo general para el cuerpo del documento */
+/**
+ * @description Estilo general para el cuerpo del documento.
+ */
 body {
     background: linear-gradient(45deg, #4D8C73, #EEE071);
     background-repeat: no-repeat;
@@ -12,7 +16,10 @@ body {
     font-family: 'Quicksand';
 }
 
-/* Logo */
+/* Estilo para el logo */
+/**
+ * @description Estilo para el logo de la aplicación.
+ */
 .logo {
     width: 20%;
     height: 20%;
@@ -20,7 +27,10 @@ body {
     padding: 0%;
 }
 
-/* Contenedor logo y botones*/
+/* Estilo para el contenedor del logo y los botones */
+/**
+ * @description Estilo para el contenedor que incluye el logo y los botones de inicio de sesión y registro.
+ */
 .contenedor {
     display: flex;
     justify-content: space-between;
@@ -28,11 +38,19 @@ body {
     margin-bottom: 80px;
 }
 
+/* Estilo para el contenedor de botones */
+/**
+ * @description Estilo para el contenedor de los botones.
+ */
 .botones {
     display: flex;
     gap: 20px;
 }
 
+/* Estilo para el botón de iniciar sesión */
+/**
+ * @description Estilo para el botón de iniciar sesión.
+ */
 .iniciarsesion {
     font-size: 30px;
     padding: 20px;
@@ -43,6 +61,10 @@ body {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de iniciar sesión en hover */
+/**
+ * @description Estilo para el botón de iniciar sesión cuando se coloca el ratón sobre él.
+ */
 .iniciarsesion:hover {
     font-size: 30px;
     padding: 20px;
@@ -53,6 +75,10 @@ body {
     cursor: pointer;
 }
 
+/* Estilo para el botón de registro */
+/**
+ * @description Estilo para el botón de registro.
+ */
 .registro {
     font-size: 30px;
     padding: 20px;
@@ -63,6 +89,10 @@ body {
     font-family: 'Quicksand';
 }
 
+/* Estilo para el botón de registro en hover */
+/**
+ * @description Estilo para el botón de registro cuando se coloca el ratón sobre él.
+ */
 .registro:hover {
     font-size: 30px;
     padding: 20px;
@@ -73,10 +103,19 @@ body {
     cursor: pointer;
 }
 
-h2{
+/* Estilo para los encabezados (h2) */
+/**
+ * @description Estilo para los encabezados (h2).
+ */
+h2 {
     text-decoration: underline;
     color: #335e4c;
 }
+
+/* Estilo para el contenedor principal */
+/**
+ * @description Estilo para el contenedor principal que incluye texto e imagen.
+ */
 .container {
     display: flex;
     width: 100%;
@@ -89,23 +128,34 @@ h2{
     margin-top: 100px;
     align-items: center;
     margin: 0 auto;
+}
 
-  }
-  
-  .text {
+/* Estilo para la sección de texto */
+/**
+ * @description Estilo para la sección de texto dentro del contenedor principal.
+ */
+.text {
     flex: 1;
     margin-right: 20px;
-  }
-  
-  .image {
+}
+
+/* Estilo para la sección de imagen */
+/**
+ * @description Estilo para la sección de imagen dentro del contenedor principal.
+ */
+.image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .image img {
+}
+
+/* Estilo para la imagen */
+/**
+ * @description Estilo para la imagen dentro del contenedor principal.
+ */
+.image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-  }
+}
