@@ -5,7 +5,8 @@ html, body {
     margin-top: 25px;
     margin-left: 25px;
     background-color: #F2F2F2;
-    padding: 10px;;
+    padding: 10px;
+    font-family: 'Quicksand';
 }
 
 .titulo {
@@ -56,6 +57,7 @@ html, body {
     border-left: 0px;
     border-right: 0px;
     background-color: rgb(241, 241, 241);
+    font-family: 'Quicksand';
 }
 
 .botonGuardarMeta {

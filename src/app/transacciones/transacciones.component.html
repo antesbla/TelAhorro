@@ -29,7 +29,8 @@
         <label class="labelFormularioIngreso">Categoría:</label>
         <select class="cuadroFormularioIngreso" [(ngModel)]="nuevoIngreso.categoria">
             <option value="Salario">Salario</option>
-            <option value="Freelance">Freelance</option>
+            <option value="Bizum">Bizum</option>
+            <option value="Devolución">Devolución</option>
             <option value="Inversión">Inversión</option>
             <option value="Otros">Otros</option>
         </select>
@@ -53,9 +54,11 @@
     
         <label class="labelFormularioGasto">Categoría:</label>
         <select class="cuadroFormularioGasto" [(ngModel)]="nuevoGasto.categoria">
-            <option value="Salario">Salario</option>
-            <option value="Freelance">Freelance</option>
+            <option value="Ocio">Ocio</option>
+            <option value="Bares y restaurantes">Bares y restaurantes</option>
             <option value="Inversión">Inversión</option>
+            <option value="Compras">Compras</option>
+            <option value="Deudas">Deudas</option>
             <option value="Otros">Otros</option>
         </select>
     

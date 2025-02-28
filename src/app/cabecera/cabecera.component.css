@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 header {
     background-image: linear-gradient(to right, #4D8C73, #EEE071);
     width: 100%;
@@ -14,6 +16,7 @@ header {
     left: 0;
     z-index: 1000;
     margin-left: 60px;
+    font-family: 'Quicksand';
 }
 /* Logo */
 img {
@@ -117,4 +120,5 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
+    font-family: 'Quicksand';
 }
