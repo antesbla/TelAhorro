@@ -24,8 +24,4 @@ export class CabeceraComponent {
       }
     });
   }
-
-  getColorFondo(): string {
-    return this.rutaActual ? '#EEE071' : 'transparent';
-  }
 }
