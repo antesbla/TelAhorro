@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    background: linear-gradient(45deg, #4D8C73, #EEE071);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Quicksand';
+}
+
+/* Logo */
+.logo {
+    width: 20%;
+    height: 20%;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Contenedor logo y botones*/
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+}
+
+.iniciarsesion {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background: 0;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+.iniciarsesion:hover {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 3px solid #ffffff;
+    background: rgba(0, 0, 0, 0.174);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.registro {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: #4A8970;
+    color: white;
+    font-family: 'Quicksand';
+}
+
+.registro:hover {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: #335e4c;
+    color: white;
+    cursor: pointer;
+}
+
+h2{
+    text-decoration: underline;
+    color: #335e4c;
+}
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.236);
+    color: black;
+    font-size: 25px;
+    margin-top: 100px;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+  
+  .text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }

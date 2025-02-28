@@ -1,0 +1,41 @@
+<body>
+  <div class="formularioRegistro">
+    <img src="https://beeimg.com/images/i73928048674.png" alt="Logo de mi aplicación">
+    
+    <form (ngSubmit)="onSubmit()">
+      <div class="formulario">
+        <div class="columna1">
+          <label class="labelFormularioRegistro" for="nombre">Nombre</label>
+          <input type="text" id="nombre" [(ngModel)]="usuario.nombre" name="nombre" required />
+
+          <label class="labelFormularioRegistro" for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" [(ngModel)]="usuario.apellidos" name="apellidos" required />
+
+          <label class="labelFormularioRegistro" for="nombreUsuario">Nombre de Usuario</label>
+          <input type="text" id="nombreUsuario" [(ngModel)]="usuario.nombreUsuario" name="nombreUsuario" required />
+        </div>
+
+        <div class="columna2">
+          <label class="labelFormularioRegistro" for="fechaNacimiento">Fecha de Nacimiento</label>
+          <input class="cuadroFormularioRegistro" type="date" id="fechaNacimiento" [(ngModel)]="usuario.fechaNacimiento" name="fechaNacimiento" required />
+    
+          <label class="labelFormularioRegistro" for="contraseña">Contraseña</label>
+          <input class="cuadroFormularioRegistro" type="password" id="contraseña" [(ngModel)]="usuario.password" name="contraseña" required />
+
+          <label class="labelFormularioRegistro" for="repetirContraseña">Repetir Contraseña</label>
+          <input class="cuadroFormularioRegistro" type="password" id="repetirContraseña" [(ngModel)]="usuario.repetirPassword" name="repetirContraseña" required />
+        </div>
+      </div>
+      
+    </form>
+    
+  </div>
+  <div class="divboton">
+    <button type="submit">Registrarse</button>
+  </div>
+</body>
+<footer>
+  <div>
+      <p>Antonio Estrada Blanco © TelAhorro 2025</p>
+  </div>
+</footer>

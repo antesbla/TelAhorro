@@ -1,0 +1,96 @@
+<body>
+    <h2>Buenos días {{ nombre }} {{ apellidos }}:</h2>
+    <p>Última Conexión {{ ultimaConexion }}</p>
+    
+    <div class="contenedor">
+        <div class="fondoBlanco">
+            <p class="verde">Dinero disponible:</p>
+        </div>
+    
+        <div class="cuadroVerde" [ngClass]="{'rojo': saldoTotal < 0}">
+            <p>{{ saldoTotal | number: '1.2-2' }}€</p>
+        </div>
+    </div>
+    
+    <h2>Últimas Transacciones:</h2>
+    <div class="contenedor">
+        <button class="Ingreso" (click)="mostrarFormularioIngreso()">Agregar Ingreso</button>
+        <button class="Gasto" (click)="mostrarFormularioGasto()">Agregar Gasto</button>
+    </div>
+    
+    <div *ngIf="formularioIngresoVisible" class="formularioIngreso">
+        <p class="tituloFormularioIngreso">Agregar Ingreso:</p>
+        <label class="labelFormularioIngreso">Fecha:</label>
+        <input type="date" class="cuadroFormularioIngreso" [(ngModel)]="nuevoIngreso.fecha" [max]="fechaHoy">
+    
+        <label class="labelFormularioIngreso">Concepto:</label>
+        <input type="text" class="cuadroFormularioIngreso" [(ngModel)]="nuevoIngreso.concepto">
+    
+        <label class="labelFormularioIngreso">Categoría:</label>
+        <select class="cuadroFormularioIngreso" [(ngModel)]="nuevoIngreso.categoria">
+            <option value="Salario">Salario</option>
+            <option value="Freelance">Freelance</option>
+            <option value="Inversión">Inversión</option>
+            <option value="Otros">Otros</option>
+        </select>
+    
+        <label class="labelFormularioIngreso">Importe:</label>
+        <input type="number" class="cuadroFormularioIngreso" [(ngModel)]="nuevoIngreso.importe" step="0.01" [min]="0.01">
+    
+        <div class="form-buttons">
+            <button class="botonGuardarIngreso" (click)="agregarIngreso()">Guardar</button>
+            <button class="botonCerrar" (click)="cerrarFormularioIngreso()">Cancelar</button>
+        </div>
+    </div>
+
+    <div *ngIf="formularioGastoVisible" class="formularioGasto">
+        <p class="tituloFormularioGasto">Agregar Gasto:</p>
+        <label class="labelFormularioGasto">Fecha:</label>
+        <input type="date" class="cuadroFormularioGasto" [(ngModel)]="nuevoGasto.fecha" [max]="fechaHoy">
+    
+        <label class="labelFormularioGasto">Concepto:</label>
+        <input type="text" class="cuadroFormularioGasto" [(ngModel)]="nuevoGasto.concepto">
+    
+        <label class="labelFormularioGasto">Categoría:</label>
+        <select class="cuadroFormularioGasto" [(ngModel)]="nuevoGasto.categoria">
+            <option value="Salario">Salario</option>
+            <option value="Freelance">Freelance</option>
+            <option value="Inversión">Inversión</option>
+            <option value="Otros">Otros</option>
+        </select>
+    
+        <label class="labelFormularioGasto">Importe:</label>
+        <input type="number" class="cuadroFormularioGasto" [(ngModel)]="nuevoGasto.importe" step="0.01">
+    
+        <div class="form-buttons">
+            <button class="botonGuardarGasto" (click)="agregarGasto()">Guardar</button>
+            <button class="botonCerrar" (click)="cerrarFormularioGasto()">Cancelar</button>
+        </div>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Concepto</th>
+                <th>Categoría</th>
+                <th>Importe (€)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ingreso of ingresos">
+                <td>{{ ingreso.fecha }}</td>
+                <td>{{ ingreso.concepto }}</td>
+                <td>{{ ingreso.categoria }}</td>
+                <td>{{ ingreso.importe | number: '1.2-2' }}</td>
+            </tr>
+
+            <tr *ngFor="let gasto of gastos">
+                <td>{{ gasto.fecha }}</td>
+                <td>{{ gasto.concepto }}</td>
+                <td>{{ gasto.categoria }}</td>
+                <td class="rojo">{{ gasto.importe | number: '1.2-2' }} €</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
