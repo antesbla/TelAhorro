@@ -14,7 +14,7 @@ export class UsuarioService {
   /**
    * @description URL de la API para las operaciones relacionadas con los usuarios.
    */
-  private apiUrl = 'http://localhost:5000';  // Asegúrate de que no haya doble barra
+  private apiUrl = 'http://localhost:5000';
 
   /**
    * @description Constructor del servicio. Inyecta el cliente HTTP y el enrutador.
@@ -54,7 +54,7 @@ export class UsuarioService {
    * @description Método para cerrar sesión.
    */
   logout() {
-    // Eliminar información del usuario (puedes ajustar esto según tu implementación)
+    // Eliminar información del usuario
     localStorage.removeItem('nombre');
     localStorage.removeItem('apellidos');
     localStorage.removeItem('nombreUsuario');

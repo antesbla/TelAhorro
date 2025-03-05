@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegistroComponent } from './registro/registro.component';  // Asegúrate de importar el componente Registro
-import { LoginComponent } from './login/login.component';  // Asegúrate de importar el componente Login
-import { PagprincComponent } from './pagprinc/pagprinc.component';  // Asegúrate de importar el componente Pagprinc
-import { TransaccionesComponent } from './transacciones/transacciones.component';  // Asegúrate de importar el componente Transacciones
+import { RegistroComponent } from './registro/registro.component';  
+import { LoginComponent } from './login/login.component';  
+import { PagprincComponent } from './pagprinc/pagprinc.component';
+import { TransaccionesComponent } from './transacciones/transacciones.component';
 import { AhorrosComponent } from './ahorros/ahorros.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'transacciones', component: TransaccionesComponent },
   { path: 'ahorros', component: AhorrosComponent },
   { path: 'perfil', component: PerfilComponent },  
-  { path: '', redirectTo: '/pagprinc', pathMatch: 'full' },  // Ruta por defecto
+  { path: '', redirectTo: '/pagprinc', pathMatch: 'full' }, 
   { path: '**', redirectTo: '/pagprinc' }
 ];
 
